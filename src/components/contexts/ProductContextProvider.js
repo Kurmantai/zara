@@ -1,7 +1,11 @@
-import React from "react";
+import React, { createContext } from "react";
+const productContext = createContext();
 
-const ProductContextProvider = () => {
-  return <div></div>;
+const ProductContextProvider = ({ children }) => {
+  const values = {};
+  return (
+    <productContext.Provider value={values}>{children}</productContext.Provider>
+  );
 };
 
 export default ProductContextProvider;
