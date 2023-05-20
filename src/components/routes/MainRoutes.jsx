@@ -1,4 +1,6 @@
 import React from "react";
+import { Route, Routes } from "react-router-dom";
+
 import MainLayout from "../mainComponents/MainLayout";
 import HomePage from "../pages/HomePage";
 import AddProductPage from "../pages/AddProductPage";
@@ -6,7 +8,6 @@ import ProductDetailsPage from "../pages/ProductDetail";
 import EditProductPage from "../pages/EditProductPage";
 import AuthPage from "../pages/AuthPage";
 import BasketPage from "../pages/BasketPage";
-import { Route, Routes } from "react-router-dom";
 
 const MainRoutes = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
-import { Container } from "@mui/material";
+import Navbar from "./navbar/Navbar";
 import { Outlet } from "react-router-dom";
+import { Container } from "@mui/material";
 
 const MainLayout = () => {
   return (
