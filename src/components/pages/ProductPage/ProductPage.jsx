@@ -10,10 +10,13 @@ const ProductPage = () => {
       <Navbar />
       <div className="product__folder">
         <input type="text" placeholder="SEARCH" />
+
+        <div className="product__p">
+          <p>SHOES</p>
+          <p>BAGS</p>
+          <p>ACCESSORIES</p>
+        </div>
         <img className="bascket" src="./images/bascket.svg" alt="bascket" />
-        <p>SHOES</p>
-        <p>BAGS</p>
-        <p>ACCESSORIES</p>
       </div>
 
       <img

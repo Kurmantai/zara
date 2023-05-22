@@ -21,9 +21,12 @@
     border-radius: 5px;
     top: 22.1%;
     left: 0;
+    background-color: black;
+    color: white;
 
     &:hover {
-      background-color: antiquewhite;
+      background-color: white;
+      color: black;
     }
   }
 }

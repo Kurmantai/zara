@@ -42,14 +42,17 @@
   }
 
   button {
+    color: white;
     width: 200px;
     height: 50px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    background-color: black;
 
     &:hover {
-      background-color: antiquewhite;
+      background-color: white;
+      color: black;
     }
   }
 
