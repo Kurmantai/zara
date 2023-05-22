@@ -2,6 +2,7 @@ import React from "react";
 import "./AuthPage.scss";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import Navbar from "../../mainComponents/navbar/Navbar";
+import { Link } from "react-router-dom";
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = React.useState(true);
@@ -31,14 +32,16 @@ const AuthPage = () => {
       </div>
 
       <div className="auth__container">
-        <h5>LOG IN TO YOUR ACCOUNT</h5>
+        <h5 style={{ marginTop: "5%", marginBottom: "3%" }}>
+          LOG IN TO YOUR ACCOUNT
+        </h5>
         <div className="log_in">
           <input className="input_email" type="email" placeholder="E-MAIL" />
           <input className="input_pw" type="password" placeholder="PASSWORD" />
           <button className="btn">LOG IN</button>
         </div>
         <div className="newAcc">
-          <a href="">NEED AN ACCOUNT?</a>
+          <Link to="/newacc">NEED AN ACCOUNT?</Link>
         </div>
       </div>
     </div>

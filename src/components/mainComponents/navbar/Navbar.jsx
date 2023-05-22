@@ -11,7 +11,8 @@ const Navbar = () => {
         </div>
 
         <div className="header__middle">
-          <img src="/images/zara.svg" alt="zara" />
+          <img className="svg" src="/images/zara.svg" alt="zara" />
+
           <h4 className="h4">MAN'S</h4>
           <h4>COLLECTION</h4>
         </div>
