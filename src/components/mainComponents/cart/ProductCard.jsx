@@ -12,8 +12,8 @@ const ProductCard = () => {
         <div className="cart__footer">
           <p className="cart__title">SHOES</p>
           <p className="cart__price">400.00$</p>
-          <p className="btn">EDIT</p>
-          <p className="btn">DELETE</p>
+          <p className="cart__btn">EDIT</p>
+          <p className="cart__btn">DELETE</p>
         </div>
       </div>
     </div>

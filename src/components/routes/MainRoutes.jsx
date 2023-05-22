@@ -9,6 +9,7 @@ import AddProductPage from "../pages/AddProductPage/AddProductPage";
 import AuthPage from "../pages/AuthPage/AuthPage";
 import BasketPage from "../pages/BascketPage/BasketPage";
 import AboutUs from "../pages/AboutUs/AboutUs";
+import PayPage from "../pages/PayPage/PayPage";
 
 const MainRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const MainRoutes = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/pay" element={<PayPage />} />
         <Route path="/add" element={<AddProductPage />} />
         <Route path="/details/:id" element={<ProductDetailsPage />} />
         <Route path="/edit/:id" element={<EditProductPage />} />
