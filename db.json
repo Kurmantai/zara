@@ -1,3 +1,169 @@
 {
-  "products": [{}]
+  "products": [
+    {
+      "id": 1,
+      "title": "PENNY STRAP LOAFERS",
+      "price": "69.95 EUR",
+      "category": "shoues",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/2615/120/700/2/w/528/2615120700_6_2_1.jpg?ts=1676032012882",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 2,
+      "title": "CHUNKY SHOES",
+      "price": "55.95 EUR",
+      "category": "shoues",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/2409/120/202/2/w/528/2409120202_6_2_1.jpg?ts=1673958215435",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 3,
+      "title": "SPLIT SUEDE",
+      "price": "49.95 EUR",
+      "category": "shoues",
+      "image": "https://static.zara.net/photos///2023/I/1/2/p/2610/220/107/2/w/528/2610220107_6_2_1.jpg?ts=1684483985297",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 4,
+      "title": "DECK SHOES",
+      "price": "59.95 EUR",
+      "category": "shoues",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/2613/120/723/2/w/528/2613120723_6_2_1.jpg?ts=1681910860258",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 5,
+      "title": "LEATHER KILTIE",
+      "price": "79.95 EUR",
+      "category": "men's clothing",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/2685/120/700/2/w/528/2685120700_6_2_1.jpg?ts=1678980639553",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 6,
+      "title": "CROSSBODY BAG",
+      "price": "29.95 EUR",
+      "category": "bags",
+      "image": "https://static.zara.net/photos///2023/I/1/2/p/3120/121/107/2/w/528/3120121107_6_2_1.jpg?ts=1683731203088",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 7,
+      "title": "CANVAS",
+      "price": "59.95 EUR",
+      "category": "bags",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/3246/020/032/2/w/528/3246020032_6_2_1.jpg?ts=1670417499469",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 8,
+      "title": "RUBBERISED",
+      "price": "59.95 EUR",
+      "category": "bags",
+      "image": "https://static.zara.net/photos///2022/I/1/2/p/3215/020/040/2/w/528/3215020040_6_1_1.jpg?ts=1661500944438",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 9,
+      "title": "SOFT TOTE",
+      "price": "49.95 EUR",
+      "category": "bags",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/3324/120/400/2/w/528/3324120400_6_2_1.jpg?ts=1680603353089",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 10,
+      "title": "MULTICOLOURED",
+      "price": "49.95 EUR",
+      "category": "bags",
+      "image": "https://static.zara.net/photos///2023/V/1/2/p/3110/120/202/2/w/528/3110120202_6_2_1.jpg?ts=1674486685628",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 11,
+      "title": "SILK OTTOMAN",
+      "price": "17.95 EUR",
+      "category": "accessories",
+      "image": "https://static.zara.net/photos///2022/I/0/2/p/5213/502/401/2/w/528/5213502401_6_3_1.jpg?ts=1659950353944",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 12,
+      "title": "PLAITED",
+      "price": "29.95 EUR",
+      "category": "accessories",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/2823/411/702/2/w/528/2823411702_6_1_1.jpg?ts=1679650143734",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 13,
+      "title": "RECTANGULAR",
+      "price": "49.95 EUR",
+      "category": "accessories",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/2750/432/500/2/w/528/2750432500_6_1_1.jpg?ts=1680691723913",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 14,
+      "title": "KNIT BANDANA",
+      "price": "9.95 EUR",
+      "category": "accessories",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/9065/476/706/2/w/528/9065476706_6_1_1.jpg?ts=1677584333099",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    },
+    {
+      "id": 15,
+      "title": "TEXTURED",
+      "price": "19.95 EUR",
+      "category": "accessories",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/9065/449/505/2/w/528/9065449505_6_1_1.jpg?ts=1678270977272",
+      "rating": {
+        "rate": 3.9,
+        "count": 120
+      }
+    }
+  ]
 }
