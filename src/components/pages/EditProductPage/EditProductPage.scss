@@ -1,0 +1,23 @@
+.AddPro {
+  display: flex;
+  justify-content: center;
+}
+
+.AddBody {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+button {
+  margin-top: 5%;
+  height: 3em;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+}

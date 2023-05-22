@@ -1,20 +1,26 @@
+// Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
 import { getAuth } from "firebase/auth";
 
-// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDQmmenEK5rgIFbr56FO_Gv0wnX_SiW6ko",
-  authDomain: "projectjs16-3fae6.firebaseapp.com",
-  projectId: "projectjs16-3fae6",
-  storageBucket: "projectjs16-3fae6.appspot.com",
-  messagingSenderId: "1091835457618",
-  appId: "1:1091835457618:web:150f25d2d5cb5c346c2f8b",
+  apiKey: "AIzaSyCFtL5R5e4-Y5eeATHceYpuf1sz_qFWPm4",
+  authDomain: "zara-b3939.firebaseapp.com",
+  projectId: "zara-b3939",
+  storageBucket: "zara-b3939.appspot.com",
+  messagingSenderId: "453940299538",
+  appId: "1:453940299538:web:1658221a87443403a095cb",
+  measurementId: "G-FZCDWBEE45",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 export const auth = getAuth(app);

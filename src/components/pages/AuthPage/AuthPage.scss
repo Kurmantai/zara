@@ -1,0 +1,61 @@
+.auth_top {
+  position: absolute;
+  left: 50%;
+}
+
+.auth__container {
+  position: absolute;
+  top: 30%;
+  left: 3%;
+  width: 100%;
+}
+
+.log_in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid;
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+  font-size: 16px;
+}
+
+.input_email {
+  margin-top: 2%;
+  width: 25%;
+}
+
+.input_pw {
+  margin-top: 3%;
+  width: 25%;
+}
+
+.btn {
+  margin-top: 3%;
+  width: 25%;
+  color: white;
+  background-color: black;
+  height: 35px;
+  cursor: pointer;
+}
+
+.newAcc {
+  width: 84.5%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+a {
+  font-size: 15px;
+  text-decoration: none;
+  color: darkgrey;
+}
