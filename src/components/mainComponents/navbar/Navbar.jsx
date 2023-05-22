@@ -9,6 +9,7 @@ const Navbar = () => {
           <p>ADD PRODUCT</p>
           <p>PRODUCTS</p>
         </div>
+
         <div className="header__middle">
           <img src="/images/zara.svg" alt="zara" />
           <h4 className="h4">MAN'S</h4>
