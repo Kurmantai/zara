@@ -6,9 +6,8 @@ import {
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
-
-import { notifyError } from "../mainComponents/Toastify";
 import { auth } from "../../fire";
+import { notifyError } from "../mainComponents/Toastify";
 
 const authContext = createContext();
 

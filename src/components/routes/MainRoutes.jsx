@@ -8,8 +8,11 @@ import EditProductPage from "../pages/EditProductPage/EditProductPage";
 import AddProductPage from "../pages/AddProductPage/AddProductPage";
 import AuthPage from "../pages/AuthPage/AuthPage";
 import BasketPage from "../pages/BascketPage/BasketPage";
+
 import AboutUs from "../pages/AboutUs/AboutUs";
 import PayPage from "../pages/PayPage/PayPage";
+
+import NewAccPage from "../pages/NewAccPage/NewAccPage";
 
 const MainRoutes = () => {
   return (
@@ -24,6 +27,7 @@ const MainRoutes = () => {
         <Route path="/edit/:id" element={<EditProductPage />} />
         <Route path="/auth" element={<AuthPage />} />
         <Route path="/bascket" element={<BasketPage />} />
+        <Route path="/newacc" element={<NewAccPage />} />
       </Routes>
     </div>
   );
