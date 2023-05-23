@@ -30,29 +30,33 @@
 .page__body {
   position: absolute;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 
-  top: 45%;
-  right: 7%;
+  top: 42%;
+  right: 0;
 
   h2 {
-    width: 28%;
-    height: 40%;
+    margin-top: 5%;
+    width: 70%;
+    height: auto;
     color: white;
   }
 
   button {
-    color: white;
+    color: black;
     width: 200px;
     height: 50px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background-color: black;
+    background-color: white;
 
     &:hover {
-      background-color: white;
-      color: black;
+      background-color: black;
+      color: white;
     }
   }
 
@@ -60,5 +64,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .page__body {
+    top: 60%;
+    left: 1%;
+  }
+}
+
+@media all and (max-width: 430px) {
+  .home__page_text {
+    display: none;
   }
 }

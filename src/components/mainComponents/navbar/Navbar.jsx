@@ -1,24 +1,35 @@
 import React from "react";
 import "./Navbar.scss";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div>
       <div className="header__container">
         <div className="header__right">
-          <p>ADD PRODUCT</p>
-          <p>PRODUCTS</p>
+          <Link to="/add">
+            <p>ADD PRODUCT</p>
+          </Link>
+          <Link to="/product">
+            <p>PRODUCTS</p>
+          </Link>
         </div>
 
         <div className="header__middle">
-          <img className="svg" src="/images/zara.svg" alt="zara" />
+          <Link to="/">
+            <img className="svg" src="/images/zara.svg" alt="zara" />
+          </Link>
 
-          <h4 className="h4">MAN'S</h4>
-          <h4>COLLECTION</h4>
+          <h2 className="h2">MAN'S</h2>
+          <h2>COLLECTION</h2>
         </div>
         <div className="header__left">
-          <p>ABOUT US</p>
-          <p>LOG IN</p>
+          <Link to="/aboutus">
+            <p>ABOUT US</p>
+          </Link>
+          <Link to="/auth">
+            <p>LOG IN</p>
+          </Link>
         </div>
       </div>
     </div>
