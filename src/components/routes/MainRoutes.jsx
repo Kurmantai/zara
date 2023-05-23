@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import HomePage from "../pages/HomePage/HomePage";
 import ProductPage from "../pages/ProductPage/ProductPage";
 import ProductDetailsPage from "../pages/ProductDetail/ProductDetail";
@@ -14,14 +14,10 @@ import PayPage from "../pages/PayPage/PayPage";
 
 import NewAccPage from "../pages/NewAccPage/NewAccPage";
 
-import { AnimatePresence } from "framer-motion";
-
 const MainRoutes = () => {
-  const location = useLocation();
-
   return (
-    <AnimatePresence>
-      <Routes location={location} key={location.pathname}>
+    <div>
+      <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -33,7 +29,7 @@ const MainRoutes = () => {
         <Route path="/bascket" element={<BasketPage />} />
         <Route path="/newacc" element={<NewAccPage />} />
       </Routes>
-    </AnimatePresence>
+    </div>
   );
 };
 

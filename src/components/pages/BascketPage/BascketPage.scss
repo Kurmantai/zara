@@ -1,24 +1,10 @@
 .bascket__hav_container {
-  position: absolute;
-  top: 0;
   margin-top: 20px;
   width: 100%;
   height: auto;
   display: flex;
-
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.bascket__body {
-  margin-top: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  position: absolute;
 }
 
 .bascket__list {
@@ -50,7 +36,7 @@
 .getOrder {
   margin-top: 20px;
   color: white;
-  width: 300px;
+  width: 200px;
   height: 30px;
   //   border-radius: 10px;
   border: none;

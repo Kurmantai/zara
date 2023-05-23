@@ -10,7 +10,7 @@
 .getBack {
   margin-top: 55px;
   color: white;
-  width: 300px;
+  width: 200px;
   height: 30px;
   //   border-radius: 10px;
   border: none;
@@ -24,9 +24,9 @@
 }
 
 .getPay {
-  margin-top: 70px;
+  margin-top: 15px;
   color: white;
-  width: 300px;
+  width: 200px;
   height: 30px;
   //   border-radius: 10px;
   border: none;
@@ -43,19 +43,9 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
-
-  input {
-    font-size: 15px;
-    border: none;
-    border-bottom: 1px solid darkgray;
-  }
 }
 
 .pay__cart {
-  width: 60%;
-  margin-top: 5px;
+  margin-top: 10px;
   height: 130px;
-  input {
-    margin-left: 10px;
-  }
 }

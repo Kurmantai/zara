@@ -1,6 +1,5 @@
 import React from "react";
 import "./ProductCart.scss";
-import { Link } from "react-router-dom";
 
 const ProductCard = () => {
   return (
@@ -13,9 +12,7 @@ const ProductCard = () => {
         <div className="cart__footer">
           <p className="cart__title">SHOES</p>
           <p className="cart__price">400.00$</p>
-          <Link to="/edit/:id">
-            <p className="cart__btn">EDIT</p>
-          </Link>
+          <p className="cart__btn">EDIT</p>
           <p className="cart__btn">DELETE</p>
         </div>
       </div>

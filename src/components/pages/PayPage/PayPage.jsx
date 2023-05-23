@@ -1,44 +1,18 @@
 import React from "react";
 import "./PayPage.scss";
-import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 const PayPage = () => {
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        transform: "scale(0.5)",
-        filter: "blur(10px)",
-      }}
-      animate={{
-        opacity: 1,
-        transform: "scale(1)",
-        filter: "blur(0px)",
-        transition: { duration: 0.4, ease: "easeOut" },
-      }}
-      exit={{
-        opacity: 0,
-        transform: "scale(0.5)",
-        filter: "blur(10px)",
-        transition: { duration: 0.2, ease: "easeIn" },
-      }}
-    >
-      <div className="pay__overlay"></div>
-
+    <div>
       <div className="pay__hav_container">
         <div>
-          <Link to="/">
-            <img src="/images/za.svg" alt="za" />
-          </Link>
+          <img src="/images/za.svg" alt="za" />
         </div>
         <div>
-          <h1>VISA CLASSIC</h1>
+          <h1>BASCKET</h1>
         </div>
       </div>
-      <Link to="/product">
-        <button className="getBack">GETBACK</button>
-      </Link>
+      <button className="getBack">GETBACK</button>
       <div className="pay__list">
         <div className="pay__cart">
           <input type="text" placeholder="CARD NUMBER*" />
@@ -48,7 +22,7 @@ const PayPage = () => {
         </div>
       </div>
       <button className="getPay">Pay</button>
-    </motion.div>
+    </div>
   );
 };
 

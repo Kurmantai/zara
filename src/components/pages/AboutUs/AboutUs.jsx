@@ -1,37 +1,14 @@
 import React from "react";
 import "./AboutUs.scss";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <motion.div
-      className="Container__about_us"
-      initial={{
-        opacity: 0,
-        transform: "scale(0.5)",
-        filter: "blur(10px)",
-      }}
-      animate={{
-        opacity: 1,
-        transform: "scale(1)",
-        filter: "blur(0px)",
-        transition: { duration: 0.4, ease: "easeOut" },
-      }}
-      exit={{
-        opacity: 0,
-        transform: "scale(0.5)",
-        filter: "blur(10px)",
-        transition: { duration: 0.2, ease: "easeIn" },
-      }}
-    >
+    <div className="Container__about_us">
       <img
         src="https://wallpapers.com/images/hd/zara-fashion-chain-store-m4g0gru4j3a7ixvs.jpg"
         alt="img"
       />
-      <Link to="/">
-        <button>GET BACK</button>
-      </Link>
+      <button>GET BACK</button>
       <h2>
         Zara is the leading trading network of the Inditex Group of companies,
         owned by Spanish tycoon Amancio Ortega, who is also the owner of such
@@ -50,7 +27,7 @@ const AboutUs = () => {
         retail network in the world". Zara was also described by CNN as "Spanish
         Success Story"
       </h2>
-    </motion.div>
+    </div>
   );
 };
 
