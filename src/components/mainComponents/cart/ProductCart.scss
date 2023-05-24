@@ -1,4 +1,5 @@
 .cart {
+  margin-top: 3%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -14,44 +15,15 @@
   border-radius: 20px;
   box-shadow: 0px 20px 40px rgba(52, 53, 99, 0.2),
     0px 1px 3px rgba(0, 0, 0, 0.05);
-  background: url(https://static.zara.net/photos///2023/V/1/2/p/2615/120/700/2/w/750/2615120700_6_2_1.jpg?ts=1676032012882)
-    center no-repeat;
+
   background-size: 270px;
   overflow: hidden;
   position: relative;
   transition: box-shadow 0.2 ease-in-out;
 }
 
-.cart__bascket {
-  position: absolute;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  top: 20px;
-  right: 20px;
-  width: 20px;
-  height: 20px;
-  background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
-  border-radius: 50%;
-  padding: 5px;
-  cursor: pointer;
-  font-size: 20px;
-
-  color: white;
-}
-
 .cart__footer {
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -80,11 +52,58 @@
   cursor: pointer;
 }
 
-.cart__btn {
+.cart__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  border-radius: 40px;
+}
+
+.crat__btn {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.4);
   color: white;
-  font-size: 13px;
+  font-size: 31px;
   cursor: pointer;
+
   &:hover {
-    color: rgba(0, 0, 0, 0.466);
+    color: greenyellow;
   }
+}
+
+.crat__fav {
+  position: absolute;
+  top: 15%;
+  left: 70%;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-size: 31px;
+
+  cursor: pointer;
+
+  &:hover {
+    color: greenyellow;
+  }
+}
+
+.cart__btn_edit {
+  cursor: pointer;
+}
+.cart__btn_delete {
+  cursor: pointer;
 }
