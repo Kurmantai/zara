@@ -1,11 +1,73 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ProductCard from "../../mainComponents/cart/ProductCard";
 import Navbar from "../../mainComponents/navbar/Navbar";
 import "./ProductPage.scss";
-import { Link } from "react-router-dom";
+import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const ProductPage = () => {
+import { useProduct } from "../../contexts/ProductContextProvider";
+import { LIMIT } from "../../contexts/helpers";
+
+const ProductPage = ({ item }) => {
+  const { products, getProducts, pageTotalCount } = useProduct();
+
+  const [page, setPage] = useState(1);
+
+  //!search
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("q") || "");
+
+  const [category, setCategory] = useState(
+    searchParams.get("category") || "all"
+  );
+
+  useEffect(() => {
+    if (category === "all") {
+      setSearchParams({
+        q: search,
+        _page: 1,
+        _limit: LIMIT,
+      });
+    } else {
+      setSearchParams({
+        q: search,
+        category: category,
+        _page: 1,
+        _limit: LIMIT,
+      });
+    }
+  }, [search, category]);
+
+  useEffect(() => {
+    if (category === "all") {
+      setSearchParams({
+        q: search,
+        _page: page,
+        _limit: LIMIT,
+      });
+    } else {
+      setSearchParams({
+        q: search,
+        category: category,
+        _page: page,
+        _limit: LIMIT,
+      });
+    }
+  }, [page]);
+
+  useEffect(() => {
+    getProducts();
+  }, [searchParams]);
+
+  useEffect(() => {
+    getProducts();
+  }, []);
+
+  useEffect(() => {
+    if (pageTotalCount < page) {
+      setPage(pageTotalCount);
+    }
+  }, [pageTotalCount]);
   return (
     <motion.div
       className="product__page"
@@ -48,9 +110,6 @@ const ProductPage = () => {
         </Link>
       </div>
       <div className="product__list">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
         <ProductCard />
       </div>
     </motion.div>

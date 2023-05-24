@@ -5,7 +5,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
-import Link from "@mui/material/Link";
+
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
@@ -14,6 +14,8 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useAuth } from "../../contexts/AuthContextProvider";
 import "./AuthPage.scss";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Copyright(props) {
   return (
@@ -57,99 +59,122 @@ export default function AuthPage() {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <br></br>
-      <img src="./images/zara.svg" alt="zara" />
+    <motion.div
+      className="auth__main_container"
+      initial={{
+        opacity: 0,
+        transform: "scale(0.3)",
+        filter: "blur(10px)",
+      }}
+      animate={{
+        opacity: 1,
+        transform: "scale(1)",
+        filter: "blur(0px)",
+        transition: { duration: 0.4, ease: "easeOut" },
+      }}
+      exit={{
+        opacity: 0,
+        transform: "scale(0.3)",
+        filter: "blur(10px)",
+        transition: { duration: 0.2, ease: "easeIn" },
+      }}
+    >
+      <ThemeProvider theme={theme}>
+        <div style={{ height: "13%" }}></div>
+        <Link to="/">
+          <img src="./images/zara.svg" alt="zara" />
+        </Link>
 
-      <Container sx={{ marginTop: 0 }} component="main" maxWidth="xs">
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <Avatar sx={{ m: 1, bgcolor: "black" }}>
-            <LockOutlinedIcon />
-          </Avatar>
-          <Typography component="h1" variant="h5">
-            Sign in
-          </Typography>
+        <Container sx={{ marginTop: 0 }} component="main" maxWidth="xs">
+          <CssBaseline />
           <Box
-            component="form"
-            onSubmit={handleSubmit}
-            noValidate
-            sx={{ mt: 1 }}
+            sx={{
+              marginTop: 8,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+            }}
           >
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
-              autoFocus
-            />
-            <TextField
-              margin="normal"
-              required
-              fullWidth
-              name="password"
-              label="Password"
-              type="password"
-              id="password"
-              autoComplete="current-password"
-            />
-            {!isLogin ? (
-              <>
-                <TextField
-                  margin="normal"
-                  required
-                  fullWidth
-                  id="name"
-                  label="Name"
-                  name="displayName"
-                  autoFocus
-                />
-              </>
-            ) : null}
-            <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            />
-
-            <Button
-              type="submit"
-              fullWidth
-              style={{ color: "white", background: "black" }}
+            <Avatar sx={{ m: 1, bgcolor: "black" }}>
+              <LockOutlinedIcon />
+            </Avatar>
+            <Typography component="h1" variant="h5">
+              Sign in
+            </Typography>
+            <Box
+              component="form"
+              onSubmit={handleSubmit}
+              noValidate
+              sx={{ mt: 1 }}
             >
-              {isLogin ? "Sign in" : "Sign up"}
-            </Button>
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+              />
+              {!isLogin ? (
+                <>
+                  <TextField
+                    margin="normal"
+                    required
+                    fullWidth
+                    id="name"
+                    label="Name"
+                    name="displayName"
+                    autoFocus
+                  />
+                </>
+              ) : null}
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Remember me"
+              />
 
-            <Grid container>
-              <Grid sx={{ marginTop: "15px" }} item>
-                <Link
-                  href="#"
-                  variant="body2"
-                  onClick={() => setIsLogin(!isLogin)}
-                  sx={{
-                    color: "darkgray",
-                    textDecoration: "none",
-                    fontSize: "15px",
-                  }}
-                >
-                  {isLogin
-                    ? "Don't have an account? Sign Up"
-                    : "Alredy have an account? Sign In"}
-                </Link>
+              <Button
+                type="submit"
+                fullWidth
+                style={{ color: "white", background: "black" }}
+              >
+                {isLogin ? "Sign in" : "Sign up"}
+              </Button>
+
+              <Grid container>
+                <Grid sx={{ marginTop: "15px" }} item>
+                  <Link
+                    href="#"
+                    variant="body2"
+                    onClick={() => setIsLogin(!isLogin)}
+                    style={{
+                      color: "black",
+                      textDecoration: "none",
+                      fontSize: "15px",
+                    }}
+                  >
+                    {isLogin
+                      ? "Don't have an account? Sign Up"
+                      : "Alredy have an account? Sign In"}
+                  </Link>
+                </Grid>
               </Grid>
-            </Grid>
+            </Box>
           </Box>
-        </Box>
-      </Container>
-    </ThemeProvider>
+        </Container>
+      </ThemeProvider>
+    </motion.div>
   );
 }

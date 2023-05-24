@@ -65,7 +65,6 @@ const AuthContextProvider = ({ children }) => {
 
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
-      console.log(user);
       dispatch({
         type: ACTIONS.user,
         payload: user,
