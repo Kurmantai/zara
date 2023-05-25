@@ -133,9 +133,9 @@ const EditProductPage = () => {
             value={formValue.category}
             onChange={(e) => handleChange(e)}
           >
-            <MenuItem value={"electronics"}>Electronics</MenuItem>
-            <MenuItem value={"jewelry"}>Jewelry</MenuItem>
-            <MenuItem value={"books"}>Books</MenuItem>
+            <MenuItem value={"shoes"}>SHOES</MenuItem>
+            <MenuItem value={"bags"}>BAGS</MenuItem>
+            <MenuItem value={"accessories"}>ACCESSORIES</MenuItem>
           </Select>
         </FormControl>
         <Button

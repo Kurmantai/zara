@@ -4,7 +4,7 @@
       "id": 1,
       "title": "PENNY STRAP",
       "price": "69.95",
-      "category": "shoues",
+      "category": "shoes",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2615/120/700/2/w/528/2615120700_6_2_1.jpg?ts=1676032012882",
       "rating": {
         "rate": 3.9,
@@ -15,19 +15,8 @@
       "id": 2,
       "title": "CHUNKY SHOES",
       "price": "55.95",
-      "category": "shoues",
+      "category": "shoes",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2409/120/202/2/w/528/2409120202_6_2_1.jpg?ts=1673958215435",
-      "rating": {
-        "rate": 3.9,
-        "count": 120
-      }
-    },
-    {
-      "id": 3,
-      "title": "SPLIT SUEDE",
-      "price": "49.95",
-      "category": "shoues",
-      "image": "https://static.zara.net/photos///2023/I/1/2/p/2610/220/107/2/w/528/2610220107_6_2_1.jpg?ts=1684483985297",
       "rating": {
         "rate": 3.9,
         "count": 120
@@ -37,7 +26,7 @@
       "id": 4,
       "title": "PENNY LOAFERS",
       "price": "55.95",
-      "category": "shoues",
+      "category": "shoes",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2620/120/709/2/w/528/2620120709_6_2_1.jpg?ts=1677149595142",
       "rating": {
         "rate": 3.9,
@@ -48,7 +37,7 @@
       "id": 5,
       "title": "LEATHER PENNY",
       "price": "69.95",
-      "category": "shoues",
+      "category": "shoes",
       "image": "https://static.zara.net/photos///2023/I/1/2/p/2686/120/800/2/w/528/2686120800_6_2_1.jpg?ts=1682594282361",
       "rating": {
         "rate": 3.9,
@@ -140,7 +129,6 @@
       "image": "https://static.zara.net/photos///2023/V/0/2/p/2750/432/500/2/w/528/2750432500_6_1_1.jpg?ts=1680691723913",
       "rating": {
         "rate": 3.9,
-
         "count": 120
       }
     },
@@ -152,7 +140,6 @@
       "image": "https://static.zara.net/photos///2023/V/0/2/p/9065/476/706/2/w/528/9065476706_6_1_1.jpg?ts=1677584333099",
       "rating": {
         "rate": 3.9,
-
         "count": 120
       }
     },
@@ -164,7 +151,6 @@
       "image": "https://static.zara.net/photos///2023/V/0/2/p/2132/402/500/2/w/528/2132402500_6_1_1.jpg?ts=1679576313719",
       "rating": {
         "rate": 3.9,
-
         "count": 120
       }
     }

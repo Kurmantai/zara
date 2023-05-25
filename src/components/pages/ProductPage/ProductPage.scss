@@ -5,12 +5,17 @@
   flex-direction: column;
   width: 100%;
   height: 100vh;
+  background-image: url(https://theimpression.com/wp-content/uploads/2021/03/Zara-man-spring-2021-ad-campaign-the-impression-001.jpg);
 
   .product__bg {
     width: 100%;
     height: 100vh;
     // position: absolute;
     object-fit: cover;
+  }
+
+  .product__pagination {
+    margin-top: 3.2%;
   }
 }
 
@@ -21,15 +26,6 @@
   flex-wrap: wrap;
   top: 43%;
   width: 100%;
-}
-
-.product__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .product__folder {
@@ -44,7 +40,7 @@
   height: auto;
 
   .favorite {
-    color: darkgray;
+    color: black;
     font-size: 31px;
     width: 40px;
     height: 40px;
@@ -60,7 +56,7 @@
   }
 
   p {
-    color: white;
+    color: black;
   }
 
   img {
@@ -98,6 +94,44 @@ p {
   color: white;
 }
 
+@media all and (max-width: 1030px) {
+  .product__page {
+    width: 100%;
+    height: 100em;
+    .product__pagination {
+      left: 37%;
+      margin-top: 7%;
+    }
+  }
+}
+@media all and (max-width: 770px) {
+  .product__page {
+    width: 100%;
+    height: 100em;
+    .product__pagination {
+      margin-top: 10%;
+      left: 33%;
+    }
+  }
+}
+
+@media all and (max-width: 430px) {
+  .product__page {
+    .product__folder {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media all and (max-width: 380px) {
+  .product__page {
+    .product__folder {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
 @media all and (max-width: 430px) {
   .product__folder {
     justify-content: space-evenly;

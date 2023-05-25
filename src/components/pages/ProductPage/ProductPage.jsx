@@ -23,7 +23,6 @@ const ProductPage = ({ item }) => {
 
   const [page, setPage] = useState(1);
 
-  //!search
   const [searchParams, setSearchParams] = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("q") || "");
 
@@ -102,11 +101,6 @@ const ProductPage = ({ item }) => {
       <div className="product__overlay"></div>
       <Navbar />
 
-      <img
-        className="product__bg"
-        src="https://theimpression.com/wp-content/uploads/2020/04/Zara-mens-spring-2020-ad-campaign-the-impression-012-scaled.jpg"
-        alt="img"
-      />
       <div className="product__folder">
         <input
           onChange={(e) => setSearch(e.target.value)}
@@ -126,16 +120,17 @@ const ProductPage = ({ item }) => {
             label="Age"
             onChange={(e) => setCategory(e.target.value)}
             sx={{
-              color: "darkgray",
+              color: "black",
               width: "80%",
               height: "33px",
               backgroundColor: "white",
               fontFamily: "Roboto",
               fontSize: "16px",
+              borderColor: "black",
             }}
           >
             <MenuItem value={"all"}>CATEGORY</MenuItem>
-            <MenuItem value={"shoues"}>SHOES</MenuItem>
+            <MenuItem value={"shoes"}>SHOES</MenuItem>
             <MenuItem value={"bags"}>BAGS</MenuItem>
             <MenuItem value={"accessories"}>ACCESSORIES</MenuItem>
           </Select>
@@ -146,24 +141,26 @@ const ProductPage = ({ item }) => {
       </div>
       <div className="product__list">
         <ProductCard />
+        <Box
+          className="product__pagination"
+          sx={{
+            maxWidth: "max-content",
+            margin: "30px auto",
+            position: "absolute",
+            top: "91%",
+            left: "41%",
+            backgroundColor: "white",
+
+            borderRadius: "15px",
+          }}
+        >
+          <Pagination
+            count={pageTotalCount}
+            page={page}
+            onChange={(e, p) => setPage(p)}
+          />
+        </Box>
       </div>
-      <Box
-        sx={{
-          maxWidth: "max-content",
-          margin: "30px auto",
-          position: "absolute",
-          top: "91%",
-          left: "44%",
-          backgroundColor: "white",
-          borderRadius: "15px",
-        }}
-      >
-        <Pagination
-          count={pageTotalCount}
-          page={page}
-          onChange={(e, p) => setPage(p)}
-        />
-      </Box>
     </motion.div>
   );
 };
