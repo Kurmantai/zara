@@ -12,6 +12,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./EditProductPage.scss";
 import { motion } from "framer-motion";
+import { notify_r } from "../../mainComponents/Toastify";
 
 const EditProductPage = () => {
   const { oneProduct, getOneProduct, editProduct } = useProduct();
@@ -22,7 +23,7 @@ const EditProductPage = () => {
 
   const [formValue, setFormValue] = useState({
     title: "",
-    description: "",
+
     price: "",
     category: "",
     image: "",
@@ -50,12 +51,11 @@ const EditProductPage = () => {
     e.preventDefault();
     if (
       !formValue.title ||
-      !formValue.description ||
       !formValue.price ||
       !formValue.image ||
       !formValue.category
     ) {
-      alert("fill the fields");
+      notify_r("FILL ALL FIELDS !");
       return;
     }
 
@@ -108,13 +108,7 @@ const EditProductPage = () => {
           label="Title"
           variant="outlined"
         />
-        <TextField
-          value={formValue.descrption}
-          onChange={(e) => handleChange(e)}
-          name="description"
-          label="Description"
-          variant="outlined"
-        />
+
         <TextField
           value={formValue.price}
           onChange={(e) => handleChange(e)}

@@ -7,6 +7,7 @@ import CartContexProvider from "./components/contexts/CartContexProvider";
 import Toastify from "./components/mainComponents/Toastify";
 import App from "./App";
 import "./index.css";
+import FavoriteContexProvider from "./components/contexts/FavoriteContexProvider";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,8 +16,10 @@ root.render(
       <AuthContextProvider>
         <ProductContextProvider>
           <CartContexProvider>
-            <Toastify />
-            <App />
+            <FavoriteContexProvider>
+              <Toastify />
+              <App />
+            </FavoriteContexProvider>
           </CartContexProvider>
         </ProductContextProvider>
       </AuthContextProvider>

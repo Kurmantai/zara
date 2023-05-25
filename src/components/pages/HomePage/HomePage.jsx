@@ -28,7 +28,8 @@ const HomePage = () => {
       <div className="container__page">
         <div className="container__page_overlay"></div>
         <Navbar />
-        <img src="/images/bg8.jpg" alt="img" />
+        <img src="/images/bg6.jpg" alt="img" />
+
         <div className="page__body">
           <h2 className="home__page_text">
             A minimal collection of limited edition tailoring captured amongst
@@ -40,7 +41,9 @@ const HomePage = () => {
           </h2>
           <div className="page__btn_container">
             <Link to="/product">
-              <button>CHOOSE YOUR COLLECTION RIGHT NOW</button>
+              <button style={{ marginTop: "30%" }}>
+                CHOOSE YOUR COLLECTION RIGHT NOW
+              </button>
             </Link>
           </div>
         </div>

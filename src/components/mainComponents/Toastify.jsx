@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 export function notify(msg) {
   return toast.success(msg, {
+    textAlign: "center",
     position: "top-center",
     autoClose: 2000,
     hideProgressBar: false,
@@ -14,6 +15,20 @@ export function notify(msg) {
     theme: "light",
   });
 }
+export function notify_r(msg) {
+  return toast.error(msg, {
+    textAlign: "center",
+    position: "top-center",
+    autoClose: 2000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: false,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+}
+
 export function notifyError(msg) {
   return toast.error(msg);
 }
