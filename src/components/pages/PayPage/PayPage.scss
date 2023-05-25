@@ -1,14 +1,23 @@
-.pay__hav_container {
-  margin-top: 30px;
+.pay__main_container {
   width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  height: 100vh;
+  background-image: url(https://theimpression.com/wp-content/uploads/2021/03/Zara-man-spring-2021-ad-campaign-the-impression-001.jpg);
+
+  .pay__hav_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    img {
+      width: 70%;
+    }
+  }
 }
 
 .getBack {
-  margin-top: 55px;
+  margin-top: 5%;
   color: white;
   width: 300px;
   height: 30px;
@@ -40,7 +49,7 @@
 }
 
 .pay__list {
-  margin-top: 40px;
+  margin-top: 11%;
   display: flex;
   justify-content: center;
 
@@ -49,13 +58,15 @@
     border: none;
     border-bottom: 1px solid darkgray;
   }
-}
 
-.pay__cart {
-  width: 60%;
-  margin-top: 5px;
-  height: 130px;
-  input {
-    margin-left: 10px;
+  .pay__cart {
+    width: 60%;
+    margin-top: 5px;
+    height: 130px;
+
+    input {
+      margin-left: 10px;
+      text-align: center;
+    }
   }
 }

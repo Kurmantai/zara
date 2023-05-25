@@ -3,10 +3,13 @@ import "./ProductCart.scss";
 import { Link } from "react-router-dom";
 import { useCart } from "../../contexts/CartContexProvider";
 import { useProduct } from "../../contexts/ProductContextProvider";
+import { useFavorite } from "../../contexts/FavoriteContexProvider";
 
 const ProductCard = ({}) => {
   const { deleteProduct, products } = useProduct();
-  const { addProductToCart, isAlreadyInCart, deleteFromCart } = useCart();
+  const { addProductToCart } = useCart();
+
+  const { addProductToFavorite } = useFavorite();
 
   return (
     <>
@@ -19,11 +22,18 @@ const ProductCard = ({}) => {
             </div>
             <div className="cart__footer">
               <img className="cart__image" src={item.image} alt="image" />
-              <div className="crat__btn">+</div>
-              <div className="crat__fav">f</div>
+              <div onClick={() => addProductToCart(item)} className="crat__btn">
+                +
+              </div>
+              <div
+                onClick={() => addProductToFavorite(item)}
+                className="crat__fav"
+              >
+                f
+              </div>
 
               <p className="cart__title">{item.title}</p>
-              <p className="cart__price">{item.price}</p>
+              <p className="cart__price">{item.price} EURO</p>
 
               <Link to={`/edit/${item.id}`}>
                 <p

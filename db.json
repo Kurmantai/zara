@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "PENNY STRAP",
-      "price": "69.95 EUR",
+      "price": "69.95",
       "category": "shoues",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2615/120/700/2/w/528/2615120700_6_2_1.jpg?ts=1676032012882",
       "rating": {
@@ -14,7 +14,7 @@
     {
       "id": 2,
       "title": "CHUNKY SHOES",
-      "price": "55.95 EUR",
+      "price": "55.95",
       "category": "shoues",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2409/120/202/2/w/528/2409120202_6_2_1.jpg?ts=1673958215435",
       "rating": {
@@ -25,7 +25,7 @@
     {
       "id": 3,
       "title": "SPLIT SUEDE",
-      "price": "49.95 EUR",
+      "price": "49.95",
       "category": "shoues",
       "image": "https://static.zara.net/photos///2023/I/1/2/p/2610/220/107/2/w/528/2610220107_6_2_1.jpg?ts=1684483985297",
       "rating": {
@@ -36,7 +36,7 @@
     {
       "id": 4,
       "title": "PENNY LOAFERS",
-      "price": "55.95 EUR",
+      "price": "55.95",
       "category": "shoues",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/2620/120/709/2/w/528/2620120709_6_2_1.jpg?ts=1677149595142",
       "rating": {
@@ -47,7 +47,7 @@
     {
       "id": 5,
       "title": "LEATHER PENNY",
-      "price": "69.95 EUR",
+      "price": "69.95",
       "category": "shoues",
       "image": "https://static.zara.net/photos///2023/I/1/2/p/2686/120/800/2/w/528/2686120800_6_2_1.jpg?ts=1682594282361",
       "rating": {
@@ -58,7 +58,7 @@
     {
       "id": 6,
       "title": "RUBBERISED ",
-      "price": "69.95 EUR",
+      "price": "69.95",
       "category": "bags",
       "image": "https://static.zara.net/photos///2023/I/1/2/p/3120/121/107/2/w/528/3120121107_6_2_1.jpg?ts=1683731203088",
       "rating": {
@@ -69,7 +69,7 @@
     {
       "id": 7,
       "title": "CANVAS",
-      "price": "59.95 EUR",
+      "price": "59.95",
       "category": "bags",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/3246/020/032/2/w/528/3246020032_6_2_1.jpg?ts=1670417499469",
       "rating": {
@@ -80,7 +80,7 @@
     {
       "id": 8,
       "title": "RUBBERISED",
-      "price": "59.95 EUR",
+      "price": "59.95",
       "category": "bags",
       "image": "https://static.zara.net/photos///2022/I/1/2/p/3215/020/040/2/w/528/3215020040_6_1_1.jpg?ts=1661500944438",
       "rating": {
@@ -91,7 +91,7 @@
     {
       "id": 9,
       "title": "SOFT TOTE",
-      "price": "49.95 EUR",
+      "price": "49.95",
       "category": "bags",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/3324/120/400/2/w/528/3324120400_6_2_1.jpg?ts=1680603353089",
       "rating": {
@@ -102,7 +102,7 @@
     {
       "id": 10,
       "title": "MULTICOLOURED",
-      "price": "49.95 EUR",
+      "price": "49.95",
       "category": "bags",
       "image": "https://static.zara.net/photos///2023/V/1/2/p/3110/120/202/2/w/528/3110120202_6_2_1.jpg?ts=1674486685628",
       "rating": {
@@ -113,7 +113,7 @@
     {
       "id": 11,
       "title": "SILK OTTOMAN",
-      "price": "17.95 EUR",
+      "price": "17.95",
       "category": "accessories",
       "image": "https://static.zara.net/photos///2022/I/0/2/p/5213/502/401/2/w/528/5213502401_6_3_1.jpg?ts=1659950353944",
       "rating": {
@@ -124,7 +124,7 @@
     {
       "id": 12,
       "title": "PLAITED",
-      "price": "29.95 EUR",
+      "price": "29.95",
       "category": "accessories",
       "image": "https://static.zara.net/photos///2023/V/0/2/p/2823/411/702/2/w/528/2823411702_6_1_1.jpg?ts=1679650143734",
       "rating": {
@@ -135,43 +135,38 @@
     {
       "id": 13,
       "title": "RECTANGULAR",
-      "price": "49.95 EUR",
+      "price": "49.95",
       "category": "accessories",
       "image": "https://static.zara.net/photos///2023/V/0/2/p/2750/432/500/2/w/528/2750432500_6_1_1.jpg?ts=1680691723913",
       "rating": {
         "rate": 3.9,
+
         "count": 120
       }
     },
     {
       "id": 14,
       "title": "KNIT BANDANA",
-      "price": "9.95 EUR",
+      "price": "9.95",
       "category": "accessories",
       "image": "https://static.zara.net/photos///2023/V/0/2/p/9065/476/706/2/w/528/9065476706_6_1_1.jpg?ts=1677584333099",
       "rating": {
         "rate": 3.9,
+
         "count": 120
       }
     },
     {
       "id": 15,
-      "title": "TEXTURED",
-      "price": "19.95 EUR",
+      "title": "QUILTED",
+      "price": "39.95",
       "category": "accessories",
-      "image": "https://static.zara.net/photos///2023/V/0/2/p/9065/449/505/2/w/528/9065449505_6_1_1.jpg?ts=1678270977272",
+      "image": "https://static.zara.net/photos///2023/V/0/2/p/2132/402/500/2/w/528/2132402500_6_1_1.jpg?ts=1679576313719",
       "rating": {
         "rate": 3.9,
+
         "count": 120
       }
-    },
-    {
-      "title": "21",
-      "description": "221",
-      "price": "2121",
-      "category": "jewelry",
-      "image": "1221",
-      "id": 16
     }
   ]
 }

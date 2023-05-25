@@ -4,6 +4,16 @@ import Navbar from "../../mainComponents/navbar/Navbar";
 import "./ProductPage.scss";
 import { Link, useSearchParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import {
+  Box,
+  FormControl,
+  Grid,
+  InputLabel,
+  MenuItem,
+  Pagination,
+  Select,
+  TextField,
+} from "@mui/material";
 
 import { useProduct } from "../../contexts/ProductContextProvider";
 import { LIMIT } from "../../contexts/helpers";
@@ -61,7 +71,7 @@ const ProductPage = ({ item }) => {
 
   useEffect(() => {
     getProducts();
-  }, []);
+  }, [products]);
 
   useEffect(() => {
     if (pageTotalCount < page) {
@@ -98,12 +108,37 @@ const ProductPage = ({ item }) => {
         alt="img"
       />
       <div className="product__folder">
-        <input className="product__search" type="text" placeholder="SEARCH" />
+        <input
+          onChange={(e) => setSearch(e.target.value)}
+          className="product__search"
+          type="text"
+          placeholder="SEARCH"
+        />
+        <Link to="/favorite">
+          <div className="favorite">f</div>
+        </Link>
 
         <div className="product__p">
-          <p>SHOES</p>
-          <p>BAGS</p>
-          <p>ACCESSORIES</p>
+          <Select
+            labelId="demo-simple-select-label"
+            id="demo-simple-select"
+            value={category}
+            label="Age"
+            onChange={(e) => setCategory(e.target.value)}
+            sx={{
+              color: "darkgray",
+              width: "80%",
+              height: "33px",
+              backgroundColor: "white",
+              fontFamily: "Roboto",
+              fontSize: "16px",
+            }}
+          >
+            <MenuItem value={"all"}>CATEGORY</MenuItem>
+            <MenuItem value={"shoues"}>SHOES</MenuItem>
+            <MenuItem value={"bags"}>BAGS</MenuItem>
+            <MenuItem value={"accessories"}>ACCESSORIES</MenuItem>
+          </Select>
         </div>
         <Link to="/bascket">
           <img className="bascket" src="./images/bascket.svg" alt="bascket" />
@@ -112,6 +147,23 @@ const ProductPage = ({ item }) => {
       <div className="product__list">
         <ProductCard />
       </div>
+      <Box
+        sx={{
+          maxWidth: "max-content",
+          margin: "30px auto",
+          position: "absolute",
+          top: "91%",
+          left: "44%",
+          backgroundColor: "white",
+          borderRadius: "15px",
+        }}
+      >
+        <Pagination
+          count={pageTotalCount}
+          page={page}
+          onChange={(e, p) => setPage(p)}
+        />
+      </Box>
     </motion.div>
   );
 };

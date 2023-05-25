@@ -1,69 +1,100 @@
-.bascket__hav_container {
-  position: absolute;
-  top: 0;
-  margin-top: 20px;
-  width: 100%;
-  height: auto;
-  display: flex;
+.bascket_main__container {
+  width: 100em;
+  height: 100em;
+  background-image: url(https://pbs.twimg.com/media/D-nzYA2XUAEWv2l.jpg:large);
+  background-size: cover;
 
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .bascket_navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    img {
+      width: 130px;
+      height: auto;
 
-.bascket__body {
-  margin-top: 12%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  position: absolute;
-}
+      cursor: pointer;
+    }
+  }
 
-.bascket__list {
-  margin-top: 20px;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  // justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
+  .bascket__body {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
 
-.getBack {
-  margin-top: 20px;
-  color: white;
-  width: 200px;
-  height: 30px;
-  //   border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: black;
-
-  &:hover {
-    background-color: white;
-    color: black;
+    .bascket__img {
+      margin-top: 5px;
+      border-radius: 15px;
+    }
   }
 }
 
-.getOrder {
-  margin-top: 20px;
-  color: white;
-  width: 300px;
-  height: 30px;
-  //   border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  background-color: black;
+// .bascket__hav_container {
+//   position: absolute;
+//   top: 0;
+//   margin-top: 20px;
+//   width: 100%;
+//   height: auto;
+//   display: flex;
 
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-}
+//   justify-content: space-evenly;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
 
-.pay__cart {
-  width: 300px;
-  height: 300px;
-}
+// .bascket__body {
+//   margin-top: 12%;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   flex-wrap: wrap;
+//   width: 100%;
+//   position: absolute;
+// }
+
+// .bascket__list {
+//   margin-top: 20px;
+//   width: 100%;
+//   height: 400px;
+//   display: flex;
+//   // justify-content: space-between;
+//   align-items: center;
+//   flex-wrap: wrap;
+// }
+
+// .getBack {
+//   margin-top: 20px;
+//   color: white;
+//   width: 200px;
+//   height: 30px;
+//   //   border-radius: 10px;
+//   border: none;
+//   cursor: pointer;
+//   background-color: black;
+
+//   &:hover {
+//     background-color: white;
+//     color: black;
+//   }
+// }
+
+// .getOrder {
+//   margin-top: 20px;
+//   color: white;
+//   width: 300px;
+//   height: 30px;
+//   //   border-radius: 10px;
+//   border: none;
+//   cursor: pointer;
+//   background-color: black;
+
+//   &:hover {
+//     background-color: white;
+//     color: black;
+//   }
+// }
+
+// .pay__cart {
+//   width: 300px;
+//   height: 300px;
+// }

@@ -20,8 +20,10 @@ const Navbar = () => {
             <img className="svg" src="/images/zara.svg" alt="zara" />
           </Link>
 
-          <h2 className="h2">MAN'S</h2>
-          <h2>COLLECTION</h2>
+          <h1 style={{ marginTop: "10%" }} className="h1">
+            MAN'S
+          </h1>
+          <h1>COLLECTION</h1>
         </div>
         <div className="header__left">
           <Link to="/aboutus">

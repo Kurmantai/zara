@@ -9,14 +9,16 @@ import {
 import React, { useState } from "react";
 import { useProduct } from "../../contexts/ProductContextProvider";
 import { Link } from "react-router-dom";
+
 import "./AddProductPage.scss";
+import { notify_r } from "../../mainComponents/Toastify";
 
 const AddProductPage = () => {
   const { addProduct } = useProduct();
 
   const [formValue, setFormValue] = useState({
     title: "",
-    description: "",
+
     price: "",
     category: "",
     image: "",
@@ -34,12 +36,11 @@ const AddProductPage = () => {
     e.preventDefault();
     if (
       !formValue.title.trim() ||
-      !formValue.description.trim() ||
       !formValue.price.trim() ||
       !formValue.image.trim() ||
       !formValue.category.trim()
     ) {
-      alert("fill the fields");
+      notify_r("FILL ALL FIELDS !");
       return;
     }
 
@@ -48,14 +49,14 @@ const AddProductPage = () => {
 
   return (
     <div className="add__main_container">
-      <div style={{ height: "10%" }}></div>
+      <div style={{ height: "13%" }}></div>
       <Link to="/">
         <img src="/images/zara.svg" alt="image" />
       </Link>
       <h1
         style={{
           textAlign: "center",
-          marginTop: "1.5%",
+          marginTop: "3%",
         }}
       >
         ADD PRODUCT
@@ -72,20 +73,14 @@ const AddProductPage = () => {
         }}
       >
         <TextField
-          sx={{ marginTop: "5%" }}
+          sx={{ marginTop: "7%" }}
           value={formValue.title}
           onChange={(e) => handleChange(e)}
           name="title"
           label="Title"
           variant="outlined"
         />
-        <TextField
-          value={formValue.description}
-          onChange={(e) => handleChange(e)}
-          name="description"
-          label="Description"
-          variant="outlined"
-        />
+
         <TextField
           value={formValue.price}
           onChange={(e) => handleChange(e)}
@@ -110,11 +105,12 @@ const AddProductPage = () => {
             value={formValue.category}
             onChange={(e) => handleChange(e)}
           >
-            <MenuItem value={"electronics"}>Electronics</MenuItem>
-            <MenuItem value={"jewelry"}>Jewelry</MenuItem>
-            <MenuItem value={"books"}>Books</MenuItem>
+            <MenuItem value={"shoes"}>SHOUES</MenuItem>
+            <MenuItem value={"bags"}>BAGS</MenuItem>
+            <MenuItem value={"accessories"}>ACCESSORIES</MenuItem>
           </Select>
         </FormControl>
+
         <Button
           style={{
             height: "50px",

@@ -1,6 +1,6 @@
 import { createContext, useContext, useReducer } from "react";
 
-import { ACTIONS, API } from "./helpers";
+import { ACTIONS, API, LIMIT } from "./helpers";
 import axios from "axios";
 
 const productContext = createContext();
@@ -30,14 +30,25 @@ const ProductContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, INIT_STATE);
 
   async function getProducts() {
-    const res = await axios.get("http://localhost:8008/products");
+    try {
+      const res = await axios.get(
+        `${API}${window.location.search || `?_limit=${LIMIT}`}`
+      );
+      const totalPages = Math.ceil(res.headers["x-total-count"] / LIMIT);
 
-    let action = {
-      type: ACTIONS.products,
-      payload: res.data,
-    };
+      let action = {
+        type: ACTIONS.products,
+        payload: res.data,
+      };
+      dispatch(action);
 
-    dispatch(action);
+      dispatch({
+        type: ACTIONS.pageTotalCount,
+        payload: totalPages,
+      });
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   async function addProduct(newProduct) {

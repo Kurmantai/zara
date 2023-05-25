@@ -68,7 +68,7 @@ const CartContexProvider = ({ children }) => {
     localStorage.setItem("cart", JSON.stringify(data));
     getCart();
 
-    notify("Seccessfully added to cart");
+    notify("SECCESSFULLY ADDED TO CART");
   }
 
   function changeProductCount(count, id) {
@@ -94,7 +94,7 @@ const CartContexProvider = ({ children }) => {
     data.totalPrice = totalSumFunc(data.products);
     localStorage.setItem("cart", JSON.stringify(data));
     getCart();
-    notify("Successfully removed from cart");
+    notify("SECCESSFULLY REMOVED FROM CART");
   }
 
   function isAlreadyInCart(id) {

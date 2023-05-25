@@ -7,9 +7,18 @@ export const ACTIONS = {
   cartLength: "cartLength",
 };
 
+export const ACTIONS_F = {
+  products: "products",
+  oneProduct: "oneProduct",
+  pageTotalCount: "pageTotalCount",
+  user: "user",
+  favorite: "favorite",
+  favoriteLength: "favoriteLength",
+};
+
 export const API = "http://localhost:8008/products";
 
-export const LIMIT = 6;
+export const LIMIT = 5;
 
 export const ADMINS = ["admin@admin.com"];
 
