@@ -18,15 +18,6 @@
   }
 }
 
-.container__page_overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 .page__body {
   position: absolute;
   display: flex;
@@ -64,6 +55,34 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+}
+
+//!ADAPTIVKA
+
+@media all and (max-width: 1030px) {
+  .page__body {
+    height: auto;
+
+    h2 {
+      margin-top: 3%;
+      width: 60%;
+      height: auto;
+      color: white;
+    }
+  }
+}
+
+@media all and (max-width: 770px) {
+  .page__body {
+    height: auto;
+
+    h2 {
+      margin-top: 3%;
+      width: 80%;
+      height: auto;
+      color: white;
+    }
   }
 }
 

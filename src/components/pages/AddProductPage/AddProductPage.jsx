@@ -12,6 +12,7 @@ import { Link } from "react-router-dom";
 
 import "./AddProductPage.scss";
 import { notify_r } from "../../mainComponents/Toastify";
+import { motion } from "framer-motion";
 
 const AddProductPage = () => {
   const { addProduct } = useProduct();
@@ -48,7 +49,26 @@ const AddProductPage = () => {
   }
 
   return (
-    <div className="add__main_container">
+    <motion.div
+      className="add__main_container"
+      initial={{
+        opacity: 0,
+        transform: "scale(0.3)",
+        filter: "blur(10px)",
+      }}
+      animate={{
+        opacity: 1,
+        transform: "scale(1)",
+        filter: "blur(0px)",
+        transition: { duration: 0.4, ease: "easeOut" },
+      }}
+      exit={{
+        opacity: 0,
+        transform: "scale(0.3)",
+        filter: "blur(10px)",
+        transition: { duration: 0.2, ease: "easeIn" },
+      }}
+    >
       <div style={{ height: "13%" }}></div>
       <Link to="/">
         <img src="/images/zara.svg" alt="image" />
@@ -123,7 +143,7 @@ const AddProductPage = () => {
           Send Product
         </Button>
       </form>
-    </div>
+    </motion.div>
   );
 };
 

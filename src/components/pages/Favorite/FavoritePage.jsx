@@ -51,6 +51,7 @@ const FavoritePage = () => {
           <img src="./images/za.svg" alt="zara" />
         </Link>
         <h1>FAVORITES</h1>
+        <div></div>
       </div>
       <div className="favorite__body">
         <Table size="small">
@@ -84,7 +85,7 @@ const FavoritePage = () => {
 
                   <TableCell>
                     <IconButton
-                      sx={{ color: "white" }}
+                      sx={{ color: "black", backgroundColor: "white" }}
                       onClick={() => deleteFromFavorite(row.id)}
                     >
                       <DeleteIcon />
@@ -105,8 +106,8 @@ const FavoritePage = () => {
         >
           <Button
             sx={{
-              color: "white",
-              borderColor: "white",
+              color: "black",
+              borderColor: "black",
               marginTop: "15px",
               marginLeft: "2%",
             }}

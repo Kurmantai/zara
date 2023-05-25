@@ -47,12 +47,13 @@ const BascketPage = () => {
         transition: { duration: 0.2, ease: "easeIn" },
       }}
     >
-      <div style={{ height: "5%" }}></div>
+      <div style={{ height: "10%" }}></div>
       <div className="bascket_navbar">
         <Link to="/">
           <img src="./images/za.svg" alt="zara" />
         </Link>
         <h1>SHOPPING BASCKET</h1>
+        <div></div>
       </div>
       <div className="bascket__body">
         <Table size="small">
