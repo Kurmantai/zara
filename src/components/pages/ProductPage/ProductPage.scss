@@ -94,55 +94,97 @@ p {
   color: white;
 }
 
-@media all and (max-width: 1030px) {
+//!ADAPRIVE
+
+@media all and (max-width: 1430px) {
   .product__page {
-    width: 100%;
-    height: 100em;
+    background-image: none;
     .product__pagination {
       left: 37%;
       margin-top: 7%;
     }
   }
 }
-@media all and (max-width: 770px) {
+
+@media all and (max-width: 1030px) {
   .product__page {
-    width: 100%;
-    height: 100em;
+    .product__list {
+      margin-top: 6%;
+    }
+    .product__folder {
+      margin-top: 5%;
+    }
     .product__pagination {
+      left: 41%;
+      margin-top: 8%;
+    }
+  }
+}
+
+@media all and (max-width: 1030px) {
+  .product__page {
+    .product__list {
+      margin-top: 6%;
+    }
+    .product__folder {
+      margin-top: 5%;
+    }
+    .product__pagination {
+      left: 38%;
       margin-top: 10%;
-      left: 33%;
     }
   }
 }
 
 @media all and (max-width: 430px) {
   .product__page {
+    .product__list {
+      margin-top: 40%;
+    }
     .product__folder {
-      width: 100%;
-      height: auto;
+      margin-top: 30%;
+    }
+    .product__pagination {
+      left: 29%;
+      margin-top: 40%;
     }
   }
 }
 
 @media all and (max-width: 380px) {
   .product__page {
+    .product__list {
+      margin-top: 40%;
+    }
     .product__folder {
-      width: 100%;
-      height: auto;
+      margin-top: 30%;
+      input {
+        width: 100%;
+        margin-left: 5%;
+      }
+    }
+    .product__pagination {
+      left: 26%;
+      margin-top: 45%;
     }
   }
 }
-@media all and (max-width: 430px) {
-  .product__folder {
-    justify-content: space-evenly;
-    top: 50%;
-  }
 
-  .product__list {
-    top: 65%;
-  }
-
-  .product__p {
-    width: 10%;
+@media all and (max-width: 380px) {
+  .product__page {
+    .product__list {
+      margin-top: 45%;
+    }
+    .product__folder {
+      margin-top: 35%;
+      input {
+        width: 100%;
+        margin-left: 10%;
+      }
+    }
+    .product__pagination {
+      left: 22%;
+      margin-top: 52%;
+    }
   }
 }
