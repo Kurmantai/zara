@@ -148,7 +148,7 @@ const ProductPage = ({ item }) => {
             margin: "30px auto",
             position: "absolute",
             top: "91%",
-            left: "41%",
+            left: "44%",
             backgroundColor: "white",
 
             borderRadius: "15px",

@@ -18,7 +18,7 @@ export const ACTIONS_F = {
 
 export const API = "http://localhost:8008/products";
 
-export const LIMIT = 3;
+export const LIMIT = 4;
 
 export const ADMINS = ["admin@admin.com"];
 
